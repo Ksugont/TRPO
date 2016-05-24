@@ -31,7 +31,7 @@
 			return 1;
 		}
 		root[0] = (-b - sqrt(d))/(2 * a);
-		root[1] = (-b - sqrt(d))/(2 * a);
+		root[1] = (-b + sqrt(d))/(2 * a);
 		return 2;
 	}
  }
