@@ -9,7 +9,7 @@
  // 0 - нет корней; 1 - один корень; 
  // 2 - два корня; 3 - бесконечно много корней.  
  
- int equation(int a, int b, int c, float *root)
+ int equation(int a, int b, int c, float root[])
  {
 	if (a == 0) {
 		if (b == 0) {
@@ -19,6 +19,7 @@
 			return 0;
 		}
 		root[0] = -c/b;
+		return 1;
 	}
 	else {
 		float d = discriminant(a,b,c);
