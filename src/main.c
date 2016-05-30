@@ -19,7 +19,7 @@ int main() {
 	if (flg == 1) {
 		printf("The equation has one root: %.2f", root[0]);
 	}
-	if (flg == 1) {
+	if (flg == 0) {
 		printf("The equation has no roots");
 	}
  }
