@@ -57,7 +57,7 @@ CTEST2(test_data, roots)
 	data->c = 3;
 	data->root[0] = -4;
 	data->root[1] = 0;
-	ex_flg = 2;
+	data->ex_flg = 2;
 	
 	data->real_flg = equation(data->a, data->b, data->c, data->ex_root);
 	ASSERT_EQUAL(data->ex_flg, data->real_flg);
