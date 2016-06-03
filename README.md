@@ -1,2 +1,2 @@
-# TRPO https://travis-ci.org/Ksugont/TRPO.svg?branch=master
+# TRPO 
 Программа, решающая квадратные уравнения и его тесты
