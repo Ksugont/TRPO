@@ -13,7 +13,7 @@ CTEST_DATA(test_data)
     float root[1];
     float ex_root[1];
     int real_flg;
-    int ex_flag;
+    int ex_flg;
 };
 
 CTEST2(test_data, test_d1) 
@@ -43,11 +43,11 @@ CTEST2(test_data, a_zero)
 	data->a = 0;
 	data->b = 4;
 	data->c = 2;
-	data->ex_flag = 1;
+	data->ex_flg = 1;
 	
-	data->real_flag = equation(data->a, data->b, data->c, data->root);
+	data->real_flg = equation(data->a, data->b, data->c, data->root);
 	
-	ASSERT_EQUAL(data->ex_flag, data->real_flag);
+	ASSERT_EQUAL(data->ex_flg, data->real_flg);
 }
 
 CTEST2(test_data, roots)
@@ -57,10 +57,10 @@ CTEST2(test_data, roots)
 	data->c = 3;
 	data->root[0] = -4;
 	data->root[1] = 0;
-	ex_flag = 2;
+	ex_flg = 2;
 	
 	data->real_flg = equation(data->a, data->b, data->c, data->ex_root);
-	ASSERT_EQUAL(data->ex_flag, data->real_flag);
+	ASSERT_EQUAL(data->ex_flg, data->real_flg);
 	ASSERT_DBL_NEAR(data->ex_root[0], data->root[0]);
 	ASSERT_DBL_NEAR(data->ex_root[1], data->root[1]);
 	
