@@ -2,6 +2,7 @@
  #include "equation.h"
  #include <math.h>
  #include <stdio.h>
+ int equation(int a, int b, int c, float root[]);
  
 int main() {
 	int a, b, c;
