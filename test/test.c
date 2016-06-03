@@ -50,19 +50,5 @@ CTEST2(test_data, a_zero)
 	ASSERT_EQUAL(data->ex_flg, data->real_flg);
 }
 
-CTEST2(test_data, roots)
-{
-	data->a = 1;
-	data->b = 4;
-	data->c = 3;
-	data->root[0] = -4;
-	data->root[1] = 0;
-	data->ex_flg = 2;
-	
-	data->real_flg = equation(data->a, data->b, data->c, data->ex_root);
-	ASSERT_EQUAL(data->ex_flg, data->real_flg);
-	ASSERT_DBL_NEAR(data->ex_root[0], data->root[0]);
-	ASSERT_DBL_NEAR(data->ex_root[1], data->root[1]);
-	
-}
+
 
